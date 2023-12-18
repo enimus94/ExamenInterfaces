@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exameninterfaces3.HelloController">
+   <center>
+      <BorderPane style="-fx-background-color: #002858;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <center>
+            <SplitPane prefHeight="485.0" prefWidth="384.0" style="-fx-background-color: #002858;">
+               <items>
+                  <AnchorPane prefHeight="483.0" prefWidth="465.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="424.0" prefWidth="251.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-style: white;" text="Nueva Entrada" textFill="#fffdfd">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label style="-fx-font-style: white;" text="Matricula" textFill="WHITE">
+                                       <padding>
+                                          <Insets right="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="matriculac" promptText="matricula" />
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Modelo" textFill="#fffdfd">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets right="28.0" />
+                                       </padding>
+                                    </Label>
+                                    <ChoiceBox fx:id="cModelo" prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Cliente" textFill="#fffdfd">
+                                       <padding>
+                                          <Insets right="33.0" />
+                                       </padding>
+                                    </Label>
+                                    <ChoiceBox fx:id="cCliente" prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Tarifa" textFill="#fffdfd">
+                                       <padding>
+                                          <Insets right="39.0" top="30.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox>
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="Standart" textFill="#fffdfd">
+                                             <padding>
+                                                <Insets top="6.0" />
+                                             </padding>
+                                          </RadioButton>
+                                          <RadioButton mnemonicParsing="false" text="Oferta" textFill="#fffdfd">
+                                             <padding>
+                                                <Insets top="6.0" />
+                                             </padding>
+                                          </RadioButton>
+                                          <RadioButton mnemonicParsing="false" text="Larga duracion" textFill="#fffdfd">
+                                             <padding>
+                                                <Insets top="6.0" />
+                                             </padding>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Entrada" textFill="#fffdfd">
+                                       <padding>
+                                          <Insets right="28.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="cFecha" prefHeight="25.0" prefWidth="153.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Salida" textFill="#fffdfd">
+                                       <padding>
+                                          <Insets right="36.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="cFechaSalida" prefHeight="25.0" prefWidth="154.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </DatePicker>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="Coste" textFill="#fffdfd">
+                                       <padding>
+                                          <Insets right="37.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="Label" textFill="#fffdfd" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="btnAñadir" mnemonicParsing="false" text="Añadir a la tabla">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#salir" text="Salir de la aplicacion">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </center>
+         <opaqueInsets>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <right>
+            <TableView fx:id="tabla1" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tMatricula" prefWidth="75.0" text="Matricula" />
+                <TableColumn fx:id="tModelo" prefWidth="75.0" text="Modelo" />
+                  <TableColumn fx:id="tFechaEntrada" prefWidth="75.0" text="Fecha de entrada" />
+                  <TableColumn fx:id="tFechaSalida" prefWidth="75.0" text="Fecha de salida" />
+                  <TableColumn fx:id="tCliente" prefWidth="75.0" text="Cliente" />
+                  <TableColumn fx:id="tTarifa" prefWidth="75.0" text="Tarifa" />
+                  <TableColumn fx:id="tCoste" prefWidth="75.0" text="Coste" />
+              </columns>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+            </TableView>
+         </right>
+      </BorderPane>
+   </center>
+   <bottom>
+      <Label prefHeight="49.0" prefWidth="168.0" text="Aplicacion creada por Cayetano" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="115.0" prefWidth="832.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/logo_cesur.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Parking Cesur">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
