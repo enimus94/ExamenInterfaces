@@ -18,15 +18,7 @@ public Date fechaSalida;
 
 public Date fechaEntrada;
 
-    public Coche(String matricula, String modelo, String cliente, String tarifa, int coste, Date fechaSalida, Date fechaEntrada) {
-        this.matricula = matricula;
-        this.modelo = modelo;
-        this.cliente = cliente;
-        this.tarifa = tarifa;
-        this.coste = coste;
-        this.fechaSalida = fechaSalida;
-        this.fechaEntrada = fechaEntrada;
-    }
+
 
     public String getMatricula() {
         return matricula;
